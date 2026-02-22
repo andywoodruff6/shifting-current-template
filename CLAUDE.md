@@ -16,7 +16,11 @@ This is an Obsidian-based knowledge management system with AI-powered workflows.
 
 ## Available Skills
 
-Skills are invoked with `/skill-name` in Claude Code. Check `.claude/skills/` for installed workflows.
+Skills are invoked with `/skill-name` in Claude Code:
+
+- `/process-meeting` — Process a meeting transcript into structured notes + update personnel files
+- `/art` — Generate visual content (blog headers, infographics, illustrations, technical diagrams)
+- `/newsletter` — Build a formatted newsletter or report from a structured data file
 
 ## Conventions
 
