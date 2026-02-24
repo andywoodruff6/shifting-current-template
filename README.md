@@ -1,32 +1,103 @@
-# Your AI Workspace
+# Shifting Current — AI Workspace Template
+![[shifting-current-logo.png]]
+A ready-to-clone personal AI workspace. Obsidian for knowledge management, your AI assistant for automation. One folder, both tools, same files.
 
-Welcome to your personal AI-powered workspace. This template was set up during your Shifting Current training session.
+## What This Is
+
+This is a template repository for [The Shifting Current](https://theshiftingcurrent.com) AI consulting workshops. Clone it, open it with Obsidian, connect your AI assistant, and you have a working system with five built-in workflows.
+
+**No coding required.** Everything is plain text files that both you and your AI can read and write.
+
+## Prerequisites
+
+Install these before cloning:
+
+**Mac:**
+1. Git — `xcode-select --install`
+2. Node.js — [nodejs.org](https://nodejs.org) LTS
+3. Bun — `curl -fsSL https://bun.sh/install | bash`
+4. [Obsidian](https://obsidian.md)
+5. An AI assistant (Claude Code, Augment, or similar)
+
+**Windows:**
+1. Git — [git-scm.com](https://git-scm.com) (includes Git Bash)
+2. Node.js — [nodejs.org](https://nodejs.org) LTS
+3. Bun — `powershell -c "irm bun.sh/install.ps1 | iex"`
+4. [Obsidian](https://obsidian.md)
+5. An AI assistant (Claude Code, Augment, or similar)
+
+## Getting Started
+
+```bash
+git clone https://github.com/andywoodruff6/shifting-current-template.git my-vault
+```
+
+1. Open `my-vault/` as a vault in Obsidian
+2. Open the **Workshop Roadmap** in `01_Capture/` — it walks you through everything
+3. Connect your AI assistant (see `04_Assets/prompts/00-setup-guide.md`)
 
 ## What's Inside
 
-| Folder | Purpose |
-|--------|---------|
-| `01_Capture/` | Daily notes, quick capture, inbox |
-| `02_Projects/` | Active project folders |
-| `03_Archives/` | Completed work and reference material |
-| `04_Assets/` | Templates, cheat sheets, reference docs |
-| `99_Templates/` | Obsidian templates (daily notes, meeting notes, etc.) |
-| `.claude/` | Claude Code commands and skills (your AI workflows) |
+```
+01_Capture/          Daily notes, quick capture, workshop roadmap
+02_Projects/         Active projects, workshop walkthrough
+03_Archives/         People files, transcripts, reference material
+04_Assets/           Prompt templates (your 5 workflows), diagrams
+99_Templates/        Obsidian templates (daily note, basic note)
+AGENTS.md            AI behavioral rules (see below)
+```
 
-## Quick Start
+## The Five Workflows
 
-1. Open this folder as a vault in Obsidian
-2. Read the workshop materials in `04_Assets/`
-3. Open a terminal in this folder and type `claude` to start your AI agent
+Prompt templates in `04_Assets/prompts/` — copy into your AI chat and go:
 
-## Your Five Workflows
+1. **Meeting Notes** — Paste a transcript, get structured notes + automatic people file updates
+2. **Visual Content** — AI writes image generation prompts you take to any image tool
+3. **Newsletter / Report** — Raw content in, polished formatted output out
+4. **Knowledge Capture** — Organize and file information into your vault
+5. **Daily Kickoff** — AI reviews your vault and helps plan your day
 
-1. **Meeting Notes** — Record a meeting, get structured notes + stakeholder updates
-2. **Knowledge System** — Your Obsidian vault organizes work and connects ideas over time
-3. **AI Agent** — Claude Code reads your files, runs workflows, and accelerates your work
-4. **Visual Content** — Generate blog headers, infographics, illustrations, and diagrams
-5. **Reports & Newsletters** — Feed in data, get formatted professional output
+## AGENTS.md — Teaching Your AI
 
-## Need Help?
+`AGENTS.md` is where you teach your AI assistant how to work in your vault. Your AI reads this file for behavioral rules.
 
-Refer to the cheat sheets in `04_Assets/` or reach out to Andy.
+**What goes in AGENTS.md:**
+- Tag rules — "Only use these tags: meeting, project, person, idea, stakeholder"
+- Task conventions — "Tasks use priorities: urgent, high, medium, low"
+- Naming conventions — "People files use full first and last names"
+- Formatting rules — "Always include frontmatter with tags and date_created"
+- Prohibitions — "Never create files in 99_Templates/ without asking"
+
+**What does NOT go in AGENTS.md:**
+- File paths or folder routing (the AI reads the folder structure itself)
+- Tool configuration (that's in `.obsidian/` and `.claude/`)
+- General knowledge (the AI already knows how Obsidian and markdown work)
+- Workflow instructions (those live in `04_Assets/prompts/`)
+
+**The rule of thumb:** only put things in AGENTS.md that the AI gets wrong. When it uses the wrong tag, creates a file in the wrong format, or breaks a convention you care about — add a rule. Start minimal and grow it over time.
+
+## Sample Data
+
+This template includes sample data for workshop demos:
+- **People files** — Alice Smith and Bob Thompson in `03_Archives/People/`
+- **Sample transcript** — A meeting transcript in `03_Archives/01_transcripts/` for testing the meeting notes workflow
+
+You can delete these after your workshop or keep them as reference.
+
+## Workshop Materials
+
+The `01_Capture/Workshop Roadmap.md` file is your guide. It links to five workshop parts that walk through the system progressively:
+
+1. Obsidian basics (links, templates, tasks)
+2. Frontmatter and structure (metadata, Bases)
+3. Using AI with Obsidian (connecting your assistant)
+4. Built-in workflows (the five prompt templates)
+5. Building your own workflows (extending the system)
+
+## License
+
+MIT
+
+## Contact
+
+Built by [Andy Woodruff](https://theshiftingcurrent.com). Questions? Reach out.
