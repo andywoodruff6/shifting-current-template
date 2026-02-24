@@ -1,5 +1,5 @@
 # Shifting Current — AI Workspace Template
-![[shifting-current-logo.png]]
+![shifting-current-logo](./04_Assets/shifting-current-logo.png)
 A ready-to-clone personal AI workspace. Obsidian for knowledge management, your AI assistant for automation. One folder, both tools, same files.
 
 ## What This Is
